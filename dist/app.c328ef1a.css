@@ -1,0 +1,92 @@
+body {
+  background-color: #212121;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/helena-yankovska-435661-unsplash.4e58ca6c.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image2 {
+  background-image: url("/world_map.c10c1287.png");
+}
+
+.image3 {
+  background-image: url("/thomas-smith-399133-unsplash.88ca3b5e.jpg");
+}
+
+.image:nth-child(1) {
+  clip-path: circle(5% at 50% 50%);
+  transform: rotate(172.4440194797deg);
+  z-index: 9;
+}
+
+.image:nth-child(2) {
+  clip-path: circle(10% at 50% 50%);
+  transform: rotate(137.0389208449deg);
+  z-index: 8;
+}
+
+.image:nth-child(3) {
+  clip-path: circle(15% at 50% 50%);
+  transform: rotate(109.9983454538deg);
+  z-index: 7;
+}
+
+.image:nth-child(4) {
+  clip-path: circle(20% at 50% 50%);
+  transform: rotate(19.4526518032deg);
+  z-index: 6;
+}
+
+.image:nth-child(5) {
+  clip-path: circle(25% at 50% 50%);
+  transform: rotate(89.0925542514deg);
+  z-index: 5;
+}
+
+.image:nth-child(6) {
+  clip-path: circle(30% at 50% 50%);
+  transform: rotate(178.2263312369deg);
+  z-index: 4;
+}
+
+.image:nth-child(7) {
+  clip-path: circle(35% at 50% 50%);
+  transform: rotate(167.0362066341deg);
+  z-index: 3;
+}
+
+.image:nth-child(8) {
+  clip-path: circle(40% at 50% 50%);
+  transform: rotate(44.6475093159deg);
+  z-index: 2;
+}
+
+.image:nth-child(9) {
+  clip-path: circle(45% at 50% 50%);
+  transform: rotate(136.6033340315deg);
+  z-index: 1;
+}
+
+.container:hover .image {
+  transform: rotate(0);
+}
+
+/*# sourceMappingURL=/app.c328ef1a.css.map */

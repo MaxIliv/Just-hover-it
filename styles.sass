@@ -1,0 +1,36 @@
+body
+    background-color: #212121
+
+.container
+    width: 500px
+    height: 500px
+    position: relative
+    overflow: hidden
+    display: inline-block
+
+.image
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-image: url('./assets/helena-yankovska-435661-unsplash.jpg')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    transition: transform .3s ease-in-out
+.image2
+    background-image: url('./assets/world_map.png')
+.image3
+    background-image: url('./assets/thomas-smith-399133-unsplash.jpg')
+
+
+@for $i from 1 through 9
+    .image:nth-child(#{$i})
+        clip-path: circle($i * 5% at 50% 50%)
+        transform: rotate(random() * 240deg)
+        z-index: 10 - $i
+
+.container:hover .image
+    transform: rotate(0)
+        
